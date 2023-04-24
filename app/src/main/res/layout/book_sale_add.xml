@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookSaleAdd">
+
+    <ImageView
+        android:id="@+id/iv_booksaleadd_home"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_saleBookAdd_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginRight="146dp"
+        android:text="Upload Book Cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_saleBookAdd_cover" />
+
+    <EditText
+        android:id="@+id/et_saleBookAdd_author"
+        android:layout_width="329dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_saleBookAdd_title" />
+
+    <EditText
+        android:id="@+id/et_saleBookAdd_price"
+        android:layout_width="327dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_saleBookAdd_description" />
+
+    <EditText
+        android:id="@+id/et_saleBookAdd_description"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_saleBookAdd_author" />
+
+    <EditText
+        android:id="@+id/et_saleBookAdd_contact"
+        android:layout_width="327dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_saleBookAdd_price" />
+
+    <Button
+        android:id="@+id/btn_saleBookAdd_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="124dp"
+        android:text="Upload"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_saleBookAdd_contact" />
+
+    <ImageView
+        android:id="@+id/iv_saleBookAdd_cover"
+        android:layout_width="117dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_booksaleadd_home"
+        app:srcCompat="@drawable/ic_baseline_image_search_24" />
+
+    <ImageView
+        android:id="@+id/iv_saleBookAdd_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_my_arrow_back_24" />
+
+    <EditText
+        android:id="@+id/et_saleBookAdd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginRight="167dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

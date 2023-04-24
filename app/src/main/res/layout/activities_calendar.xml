@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitiesCalendar">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:fontFamily="serif"
+        android:text="Activities"
+        android:textColor="#009688"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_activitiescalendar_home" />
+
+
+    <CalendarView
+        android:id="@+id/cv_activities_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/iv_activitiescalendar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_my_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/iv_activitiescalendar_home"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_activitiescalendar_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images" />
+
+    <ImageView
+        android:id="@+id/iv_activitiescalendar_addactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="46dp"
+        android:text="Add Activity"
+        app:layout_constraintStart_toEndOf="@+id/iv_activitiescalendar_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_activities_calendar">
+
+        <TextView
+            android:id="@+id/tv_activities_date"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_activities_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/tv_activities_name"
+            tools:layout_editor_absoluteY="544dp" />
+
+        <TextView
+            android:id="@+id/tv_activities_name"
+            android:layout_width="134dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="266dp"
+            android:layout_marginRight="266dp"
+            android:fontFamily="serif"
+            android:text="Activity Name"
+            android:textColor="#009688"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="520dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="37dp"
+            android:layout_toEndOf="@+id/tv_activities_date"
+            android:layout_toRightOf="@+id/tv_activities_date"
+            android:fontFamily="serif"
+            android:text="Room"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_activities_date"
+            tools:layout_editor_absoluteY="526dp" />
+
+        <TextView
+            android:id="@+id/tv_activities_description"
+            android:layout_width="299dp"
+            android:layout_height="105dp"
+            android:layout_below="@+id/tv_activities_date"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:layout_toEndOf="@+id/iv_activities_left"
+            android:layout_toRightOf="@+id/iv_activities_left"
+            android:text="Description"
+            android:textColor="#009688"
+            app:layout_constraintStart_toEndOf="@+id/iv_activities_left"
+            app:layout_constraintTop_toBottomOf="@+id/tv_activities_date" />
+
+        <TextView
+            android:id="@+id/tv_activities_room"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginRight="82dp"
+            android:layout_toEndOf="@+id/textView21"
+            android:layout_toRightOf="@+id/textView21"
+            android:fontFamily="serif"
+            android:text="Number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            tools:layout_editor_absoluteY="526dp" />
+
+        <ImageView
+            android:id="@+id/iv_activities_left"
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="23dp"
+            android:background="@color/teal_700"
+            app:srcCompat="@drawable/ic_baseline_navigate_before_24"
+            app:tint="#FFFFFF"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="565dp" />
+
+        <ImageView
+            android:id="@+id/iv_activities_right"
+            android:layout_width="32dp"
+            android:layout_height="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toEndOf="@+id/tv_activities_description"
+            android:layout_toRightOf="@+id/tv_activities_description"
+            android:background="@color/teal_700"
+            android:contentDescription="TODO"
+            app:layout_constraintStart_toEndOf="@+id/tv_activities_description"
+            app:layout_constraintTop_toBottomOf="@+id/tv_activities_room"
+            app:srcCompat="@drawable/ic_baseline_navigate_next_24"
+            app:tint="#FFFFFF" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

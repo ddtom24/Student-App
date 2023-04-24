@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_businesscard"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="16dp"
+            android:text="Title:"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_businesscard"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="45dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="9dp"
+            android:text="Author:"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_businesscard"
+            app:layout_constraintTop_toBottomOf="@+id/tv_businesscard" />
+
+        <TextView
+            android:id="@+id/textview_dd"
+            android:layout_width="38dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="9dp"
+            android:text="ISBN:"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_businesscard"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Button
+            android:id="@+id/btn_librarybookcard_reservation"
+            android:layout_width="188dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="6dp"
+            android:text="Make Reservation"
+            android:textSize="12sp"
+            app:backgroundTint="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_businesscard_edition" />
+
+        <TextView
+            android:id="@+id/tv_businesscard_title"
+            android:layout_width="129dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_businesscard"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_businesscard_author"
+            android:layout_width="127dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/tv_businesscard_title" />
+
+        <TextView
+            android:id="@+id/tv_businesscard_isbn"
+            android:layout_width="126dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/textview_dd"
+            app:layout_constraintTop_toBottomOf="@+id/tv_businesscard_author" />
+
+        <TextView
+            android:id="@+id/tv_forumtopiccard_author"
+            android:layout_width="39dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="12dp"
+            android:text="Edition"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_businesscard"
+            app:layout_constraintTop_toBottomOf="@+id/textview_dd" />
+
+        <TextView
+            android:id="@+id/tv_businesscard_edition"
+            android:layout_width="125dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_forumtopiccard_author"
+            app:layout_constraintTop_toBottomOf="@+id/tv_businesscard_isbn" />
+
+        <ImageView
+            android:id="@+id/iv_businesscard"
+            android:layout_width="93dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_image_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

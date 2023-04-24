@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".BookCategories"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_categories_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_baseline_my_arrow_back_24">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_bookcategories_home"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="112dp"
+                android:layout_marginLeft="112dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="175dp"
+                android:layout_marginRight="175dp"
+                android:layout_toEndOf="@+id/iv_categories_back"
+                android:layout_toRightOf="@+id/iv_categories_back"
+                app:srcCompat="@drawable/images" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/tv3455"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@color/teal_200"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="Categories"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="129dp"
+                android:layout_marginLeft="129dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="135dp"
+                android:layout_marginRight="135dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Library"
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_libcategories_goto_booksale"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginRight="-1dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@+id/tv_categories_search"
+                android:layout_toRightOf="@+id/tv_categories_search"
+                android:background="#3703DAC5"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Book Sale"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_categories_search"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/rv_menu"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@+id/tv3455"
+                android:layout_toRightOf="@+id/tv3455"
+                android:background="#3703DAC5"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="All Books"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="NotSibling,UnknownId" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_categories_business"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="98dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="26dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:text="Business"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_categories_computing"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="98dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="26dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Computing"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_categories_economics"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="98dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="26dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Economics"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_categories_mathematics"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="98dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="26dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Mathematics"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
